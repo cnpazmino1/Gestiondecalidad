@@ -21,3 +21,5 @@ class TestAnalizador(unittest.TestCase):
     def test_valores_de_ventas_mayores_a_cero(self):
         resumen = self.analizador.ventas_por_provincia()
         self.assertTrue(all(float(v) > 0 for v in resumen.values()))
+
+    def test_ventas_por_provincia_inexistente():
